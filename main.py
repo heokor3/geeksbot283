@@ -38,7 +38,7 @@ async def sticker(message: types.Message):
 
 
 @dp.message_handler(commands=["info"])
-async def start(message: types.Message):
+async def info(message: types.Message):
     # await message.reply("Приветствуем тебя, пользователь")
     firstname = message.from_user.first_name
     await message.reply(
